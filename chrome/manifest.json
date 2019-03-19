@@ -1,0 +1,17 @@
+{
+  "name": "Ember-browser-extension",
+  "description": "Small description for ember-browser-extension goes here",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "icons": {
+    "16": "ember-browser-extension-16.png",
+    "128": "ember-browser-extension-128.png"
+  }
+}
