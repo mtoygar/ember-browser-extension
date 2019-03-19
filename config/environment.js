@@ -23,6 +23,18 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['ember-cli-post-build-copy'] = {
+    replace: true,
+    development: [
+      ['/assets/app.js', 'chrome/assets/app.js'], 
+      ['/assets/app.css', 'chrome/assets/app.css']
+    ],
+    production: [
+      ['/assets/app.js', 'chrome/assets/app.js'], 
+      ['/assets/app.css', 'chrome/assets/app.css']
+    ]
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
