@@ -16,7 +16,10 @@ module.exports = function(defaults) {
       css: {
         concat: true
       }
-    }
+    },
+    autoImport: {
+      forbidEval: true,
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
