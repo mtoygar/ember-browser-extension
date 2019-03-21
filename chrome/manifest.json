@@ -10,5 +10,10 @@
   "browser_action": {
     "default_icon": "icons/construction-tomster-32x32.png",
     "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background/basic-background-message-listener.js"
+    ]
   }
 }
