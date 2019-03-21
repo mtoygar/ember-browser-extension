@@ -15,5 +15,11 @@
     "scripts": [
       "background/basic-background-message-listener.js"
     ]
-  }
+  },
+  "content_scripts": [
+   {
+     "matches": ["*://*/*"],
+     "js": ["lib/browser-polyfill.min.js", "content-scripts/basic-content-script.js"]
+   }
+ ]
 }
