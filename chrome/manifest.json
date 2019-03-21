@@ -1,17 +1,14 @@
 {
-  "name": "Ember-browser-extension",
-  "description": "Small description for ember-browser-extension goes here",
-  "version": "0.0.0",
+  "name": "Sample Ember Extension",
+  "description": "An extension that rules them all!",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "app": {
-    "background": {
-      "scripts": [
-        "background.js"
-      ]
-    }
-  },
   "icons": {
-    "16": "ember-browser-extension-16.png",
-    "128": "ember-browser-extension-128.png"
+    "16": "icons/construction-tomster-16x16.png",
+    "32": "icons/construction-tomster-32x32.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/construction-tomster-32x32.png",
+    "default_popup": "popup/popup.html"
   }
 }
