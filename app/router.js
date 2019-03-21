@@ -7,6 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('popup', { path: '/popup/popup.html' });
 });
 
 export default Router;

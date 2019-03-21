@@ -1,0 +1,1 @@
+require('ember-browser-extension/app')['default'].create({ rootElement: '#chrome-app' });
