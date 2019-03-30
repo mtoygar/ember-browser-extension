@@ -20,6 +20,10 @@
    {
      "matches": ["*://*/*"],
      "js": ["lib/browser-polyfill.min.js", "content-scripts/basic-content-script.js"]
+   },
+   {
+     "matches": ["https://github.com/mtoygar/ember-browser-extension/*"],
+     "js": ["assets/app.js", "content-scripts/content-script-ember-app.js"]
    }
  ]
 }

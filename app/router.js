@@ -8,6 +8,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('popup', { path: '/popup/popup.html' });
+  this.route('content-script', { path: '/mtoygar/ember-browser-extension', resetNameSpace: true }, function() {
+    this.route('index', { path: '' });
+    this.route('meet', { path: '/meet-point' });
+  });
 });
 
 export default Router;
