@@ -23,7 +23,11 @@
    },
    {
      "matches": ["https://github.com/mtoygar/ember-browser-extension/*"],
-     "js": ["assets/app.js", "content-scripts/content-script-ember-app.js"]
+     "js": ["assets/app.js",
+            "content-scripts/ember-app/constants.js",
+            "content-scripts/ember-app/initializer.js",
+            "content-scripts/ember-app/url-observer.js",
+            "content-scripts/ember-app/boot.js"]
    }
  ]
 }
