@@ -29,11 +29,17 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+* `ember build`
+* For `Chrome`:
+  * Navigate to chrome://extensions in your browser. You can also access this page by clicking on the Chrome menu on the top right side of the Omnibox, hovering over More Tools and selecting Extensions.
+  * Check the box next to Developer Mode.
+  * Click Load Unpacked Extension and select the directory for your "Hello Extensions" extension.
+* For `Firefox`:
+  * enter about:debugging in the URL bar
+  * click "Load Temporary Add-on"
+  * open the extension's directory and select any file inside the extension.
 
-### Code Generators
+For more info about debugging/developing extensions visit [https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) and [https://developer.chrome.com/extensions](https://developer.chrome.com/extensions)
 
 Make use of the many generators for code, try `ember help generate` for more details
 
