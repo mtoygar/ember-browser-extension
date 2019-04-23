@@ -13,6 +13,7 @@
   },
   "background": {
     "scripts": [
+      "lib/browser-polyfill.min.js",
       "background/basic-background-message-listener.js"
     ]
   },
