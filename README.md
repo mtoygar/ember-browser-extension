@@ -29,12 +29,13 @@ Contains an example of a content script build by Ember. The prepared example is 
   * click "Load Temporary Add-on"
   * open the extension's directory and select any file inside the extension.
 
-For more info about debugging/developing extensions visit [https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) and [https://developer.chrome.com/extensions](https://developer.chrome.com/extensions)
-
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
 * [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [Ember.Application(starting point of Ember application)](https://api.emberjs.com/ember/3.3/classes/Application)
+* [Firefox Add-ons Developer Guides](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
+* [Chrome Extensions Developer Guides](https://developer.chrome.com/extensions)
+* [A framework for ambitious Chrome Extensions by Envoy Engineering](https://envoy.engineering/a-framework-for-ambitious-chrome-extensions-b08d1f4b944d)
+
+
