@@ -11,16 +11,6 @@ Contains an example of a content script applicable to both Firefox and Chrome th
 ## Content Script with Ember App
 Contains an example of a content script build by Ember. The prepared example is inspired by the [ZenHub's extension](https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) and works on this repo's url(https://github.com/mozilla/webextension-polyfill). When user visited the repo, extension simply adds a button to the navigation bar and this button triggers ember boot when clicked. Therefore, when user click the button ember is booted and a location hash is added to the url. After this point, all routing and state management is done by using Ember. One can see the possible routes on [router.js](https://github.com/mtoygar/ember-browser-extension/blob/master/app/router.js)
 
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
 ## Installation
 
 * `git clone <repository-url>` this repository
@@ -40,27 +30,6 @@ You will need the following things properly installed on your computer.
   * open the extension's directory and select any file inside the extension.
 
 For more info about debugging/developing extensions visit [https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) and [https://developer.chrome.com/extensions](https://developer.chrome.com/extensions)
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
