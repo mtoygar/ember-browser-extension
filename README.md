@@ -1,7 +1,15 @@
 # ember-browser-extension
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo is started to guide and facilitate developing a browser extension using Ember. It makes use of Ember and [Mozilla's webextension-polyfill](https://github.com/mozilla/webextension-polyfill) to create a maintainable and scalable extension.
+
+# Contained Examples
+
+## Popup
+The ember app is booted inside a div(with id `chrome-app`) in `popup.html` using the `popup.js`. [Click to access related code.](https://github.com/mtoygar/ember-browser-extension/tree/master/chrome/popup)
+## Basic Content Script
+Contains an example of a content script applicable to both Firefox and Chrome thanks to webextension-polyfill. [Click to access related code.](https://github.com/mtoygar/ember-browser-extension/blob/master/chrome/content-scripts/basic-content-script.js)
+## Content Script with Ember App
+Contains an example of a content script build by Ember. The prepared example is inspired by the [ZenHub's extension](https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) and works on this repo's url(https://github.com/mozilla/webextension-polyfill). When user visited the repo, extension simply adds a button to the navigation bar and this button triggers ember boot when clicked. Therefore, when user click the button ember is booted and a location hash is added to the url. After this point, all routing and state management is done by using Ember. One can see the possible routes on [router.js](https://github.com/mtoygar/ember-browser-extension/blob/master/app/router.js)
 
 ## Prerequisites
 
