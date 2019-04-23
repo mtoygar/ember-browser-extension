@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('popup', { path: '/popup/popup.html' });
+  this.route('popup');
   this.route('content-script', { path: 'ember', resetNameSpace: true }, function() {
     this.route('index', { path: '' });
     this.route('meet', { path: 'meet-point' });
