@@ -2,12 +2,18 @@
 
 function addEmberTriggerButtonToDOM() {
   let githubNavigationBar = document.querySelector('.reponav');
+  let triggerButton = createTriggerButton();
+  githubNavigationBar.appendChild(triggerButton);
+}
+
+function createTriggerButton() {
   let elem = document.createElement('a');
   elem.id = GITHUB_BUTTON_ID;
   elem.text = 'Start Ember';
+  elem.classList = 'js-selected-navigation-item reponav-item';
   elem.href = EMBER_EXTENSION_LOCATION_HASH_PREFIX;
   elem.onclick = runEmber;
-  githubNavigationBar.appendChild(elem);
+  return elem;
 }
 
 function runEmber(){
