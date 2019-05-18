@@ -13,6 +13,7 @@
   },
   "background": {
     "scripts": [
+      "lib/hot-reload.js",
       "lib/browser-polyfill.min.js",
       "background/basic-background-message-listener.js"
     ]
