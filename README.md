@@ -11,6 +11,8 @@ Contains an example of a content script applicable to both Firefox and Chrome th
 ## Content Script with Ember App
 Contains an example of a content script build by Ember. The prepared example is inspired by the [ZenHub's extension](https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) and works on this repo's url(https://github.com/mtoygar/ember-browser-extension/). When user visited the repo, extension simply adds a button to the navigation bar and this button triggers ember boot when clicked. Therefore, when user click the button ember is booted and a location hash is added to the url. After this point, all routing and state management is done by using Ember. One can see the possible routes on [router.js](https://github.com/mtoygar/ember-browser-extension/blob/master/app/router.js)
 
+It is also beneficial to add that the sample extension uses HashLocation routing. This way, Ember uses the hash part of the URL for its routing purposes. Moreover, when the user reloads the page, the content script detects if the extension's hash location is on the URL and automatically renders the ember route on the GitHub container.
+
 ### Screenshot
 
 <img src="https://raw.githubusercontent.com/mtoygar/ember-browser-extension/master/docs/screenshots/nav-bar-and-container.png" alt="content script backed by Ember App" />
@@ -41,5 +43,6 @@ Contains an example of a content script build by Ember. The prepared example is 
 * [Firefox Add-ons Developer Guides](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
 * [Chrome Extensions Developer Guides](https://developer.chrome.com/extensions)
 * [A framework for ambitious Chrome Extensions by Envoy Engineering](https://envoy.engineering/a-framework-for-ambitious-chrome-extensions-b08d1f4b944d)
+* [HashLocation Routing Ember Reference](https://api.emberjs.com/ember/release/classes/HashLocation)
 
 
